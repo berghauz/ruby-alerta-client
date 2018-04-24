@@ -19,7 +19,7 @@ class AlertaClient
     # service - where it happend
     # resource - with what it happend
     # event - what happend, in short
-    # value - value of happent, if applicapable
+    # value - value of happens, if applicable
     # text - what exactly happened, in detail
     def alert(service, resource, event, value, text, environment: @env, rawData: nil, severity: 'major', correlate: [], status: 'open', group: 'Misc', tags: [], attributes: {}, origin: nil, type: nil, timeout: 86400)
 	@uri = URI.parse("#{@host}/alert")
